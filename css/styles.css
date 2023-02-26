@@ -70,6 +70,12 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
+  min-width: 160px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  padding: 12px 20px;
 }
 .visually-hidden {
   position: absolute;
@@ -88,11 +94,20 @@ body {
   background-color: grey;
   padding: 32px 0;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .header-navigation {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
+  margin-right: 131px;
 }
 .header-list {
+  display: flex;
+  gap: 30px;
 }
 .header-item {
 }
@@ -115,17 +130,26 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-left: auto;
+  margin-right: 43px;
 }
 .header-btn {
-  color: #ffffff;
 }
 
 /* ---------------hero----------- */
 
 .hero {
-  background-color: grey;
+}
+.hero-container {
+  display: flex;
 }
 .hero-list {
+  width: 100px;
+}
+.hero-contant {
+  background: grey;
+  padding: 272px 100px 208px;
+  flex-grow: 1;
 }
 .hero-item {
 }
@@ -167,9 +191,21 @@ body {
 .about {
   padding: 120px 0;
 }
+.about-container {
+  display: flex;
+}
 .about-list {
+  display: flex;
+  gap: 30px;
+  margin-right: 30px;
+  width: 50%;
 }
 .about-item {
+  width: calc((100% - 30px) / 2);
+}
+.about-content {
+  width: 50%;
+  max-width: 470px;
 }
 .about-subtitle {
   color: var(--secondary-title-color);
@@ -200,6 +236,7 @@ body {
 
 .prices {
   padding: 120px 0;
+  background: grey;
 }
 .prices-subtitle {
   color: rgba(157, 164, 189, 0.6);
@@ -209,10 +246,19 @@ body {
   color: var(--main-title-color);
   margin-bottom: 44px;
 }
+.prices-content {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+}
 .prices-list {
+  border: 1px solid green;
   padding: 30px 20px;
+  flex-grow: 1;
 }
 .prices-item {
+  display: flex;
+  justify-content: space-between;
 }
 .prices-item:not(:last-child) {
   margin-bottom: var(--basic-margin);
@@ -226,6 +272,8 @@ body {
 }
 .prices-btn {
   color: #ffffff;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ------------benefits---------------- */
@@ -270,13 +318,21 @@ body {
 }
 .barbers-subtitle {
   color: var(--secondary-title-color);
+  margin-bottom: var(--basic-margin);
 }
 .barbers-title {
   color: var(--secondary-title-color);
+  margin-bottom: 44px;
 }
 .barbers-list {
+  display: flex;
+  gap: 30px;
 }
 .barbers-item {
+  width: calc((100% - 60px) / 3);
+}
+.barbers-content {
+  padding: 30px;
 }
 .barbers-item-title {
   font-weight: 400;
@@ -285,6 +341,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--secondary-title-color);
+  margin-bottom: 8px;
 }
 .barbers-item-text {
   font-size: 14px;
@@ -297,13 +354,19 @@ body {
 /* ------------gallery---------------- */
 
 .gallery {
+  padding: 120px 0;
 }
 .gallery-subtitle {
   color: var(--secondary-title-color);
+  margin-bottom: 44px;
 }
 .gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .gallery-item {
+  width: calc((100% - 90px) / 4);
 }
 
 /* ------------contacts---------------- */
