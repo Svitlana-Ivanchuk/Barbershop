@@ -14,9 +14,27 @@
   --secondaru-font: "Raleway", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 .list {
   list-style: none;
 }
