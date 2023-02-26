@@ -12,6 +12,7 @@
   --secondary-title-color: #303030;
   --accent-color: #ff6c00;
   --secondaru-font: "Raleway", sans-serif;
+  --basic-margin: 20px;
 }
 
 h1,
@@ -26,13 +27,21 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+img {
+  display: block;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
+  outline: 1px solid red;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .list {
@@ -77,6 +86,7 @@ body {
 /*---------header------ */
 .header {
   background-color: grey;
+  padding: 32px 0;
 }
 .header-navigation {
 }
@@ -133,6 +143,7 @@ body {
 
 .hero-subtitle {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--basic-margin);
 }
 
 .hero-title {
@@ -141,17 +152,20 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
+  margin-bottom: var(--basic-margin);
 }
 .hero-description {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  width: 360px;
 }
 
 /* ----------about----------- */
 
 .about {
+  padding: 120px 0;
 }
 .about-list {
 }
@@ -159,19 +173,24 @@ body {
 }
 .about-subtitle {
   color: var(--secondary-title-color);
+  margin-bottom: var(--basic-margin);
 }
 .about-title {
   color: var(--secondary-title-color);
+  margin-bottom: var(--basic-margin);
 }
 .about-description {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 42px;
 }
 .about-description span {
+  display: block;
   font-size: 18px;
   line-height: 1.67;
+  margin-bottom: var(--basic-margin);
 }
 .about-btn {
   color: #303030;
@@ -180,17 +199,25 @@ body {
 /* ------------prices------------- */
 
 .prices {
+  padding: 120px 0;
 }
 .prices-subtitle {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--basic-margin);
 }
 .prices-title {
   color: var(--main-title-color);
+  margin-bottom: 44px;
 }
 .prices-list {
+  padding: 30px 20px;
 }
 .prices-item {
 }
+.prices-item:not(:last-child) {
+  margin-bottom: var(--basic-margin);
+}
+
 .prices-itme-text {
   font-size: 18px;
   line-height: 1.67;
