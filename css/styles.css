@@ -260,6 +260,7 @@ body {
   border: 1px solid green;
   padding: 30px 20px;
   flex-grow: 1;
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 .prices-item {
   display: flex;
@@ -283,6 +284,7 @@ body {
 
 /* ------------benefits---------------- */
 .benefits {
+  padding: 120px 0;
 }
 .benefits-list {
 }
@@ -320,6 +322,8 @@ body {
 /* ------------barbers---------------- */
 
 .barbers {
+  padding: 120px 0;
+  background: #f7f7f7;
 }
 .barbers-subtitle {
   color: var(--secondary-title-color);
