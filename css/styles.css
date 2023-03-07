@@ -194,6 +194,7 @@ body {
   display: flex;
 }
 .about-list {
+  display: inline-block;
   display: flex;
   gap: 30px;
   margin-right: 30px;
