@@ -47,11 +47,22 @@ body {
   letter-spacing: 0.05em;
 }
 .subtitle {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
 }
+.subtitle::before {
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: #ff6c00;
+  content: "";
+  margin-right: 20px;
+}
+
 .btn {
   font-family: inherit;
   font-weight: 600;
@@ -149,6 +160,7 @@ body {
     url(../img/slider-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .hero-item {
 }
