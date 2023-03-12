@@ -78,6 +78,11 @@ body {
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   padding: 12px 20px;
+  transition: color 0, 35s linear background 0, 35s linear;
+}
+.btn:is(:hover, ::before) {
+  color: #fff;
+  background-color: var(--accent-color);
 }
 .visually-hidden {
   position: absolute;
@@ -93,8 +98,12 @@ body {
 }
 /*---------header------ */
 .header {
-  background-color: grey;
+  background-color: transparent;
   padding: 32px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 .header-container {
   display: flex;
@@ -119,12 +128,26 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: #ffffff;
+  position: relative;
+  padding: 24px 0;
+  transition: color 0, 35s linear;
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
-
+.header-link.active {
+  color: var(--accent-color);
+}
+.header-link.active::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
 .header-tel {
   font-weight: 600;
   font-size: 12px;
@@ -147,10 +170,28 @@ body {
   background-position: center;
   background-repeat: no repeat;
 }
-.hero-list {
-  width: 100px;
+.hero-list-wrap {
+  display: flex;
+  align-items: flex-end;
 }
-.hero-contant {
+.hero-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100px;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: top left;
+}
+.hero-list::before {
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  content: "";
+  flex-shrink: 0;
+}
+
+.hero-content {
   background: grey;
   padding: 272px 100px 208px;
   flex-grow: 1;
@@ -165,12 +206,14 @@ body {
 }
 .hero-item {
 }
+
 .hero-link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+  transition: color 0.35s linear;
 }
 .hero-link:hover,
 .hero-link:focus {
@@ -271,7 +314,11 @@ body {
 .prices-list {
   padding: 30px 20px;
   flex-grow: 1;
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
   width: calc((100% - 30px) / 2);
 }
 .prices-item {
@@ -338,8 +385,7 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
-  display: flex;
-  align-items: flex-start;
+  position: relative;
 }
 .benefits-item > span::after {
   content: "+";
@@ -348,6 +394,9 @@ body {
   line-height: calc(22 / 16);
   text-align: center;
   color: var(--accent-color);
+  position: absolute;
+  top: 7px;
+  right: -10px;
 }
 .benefits-item-text {
   font-weight: 600;
@@ -436,6 +485,7 @@ body {
   border-radius: 50%;
   background-color: #fff;
   color: #303030;
+  transition: color 0, 35s linear;
 }
 .barber-social-link:is(:hover, :focus) {
   color: var(--accent-color);
