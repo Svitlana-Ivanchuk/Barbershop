@@ -47,7 +47,9 @@
         <a href="tel:+380441111111" class="header-tel link"
           >+38 044 111 11 11</a
         >
-        <button type="button" class="header-btn btn">Online-booking</button>
+        <button type="button" class="header-btn btn" data-modal-open>
+          Online-booking
+        </button>
       </div>
     </header>
 
@@ -222,12 +224,20 @@
           <h2 class="barbers-title title">Our barbers</h2>
           <ul class="barbers-list list">
             <li class="barbers-item">
-              <img
-                src="./img/barber-team-1.jpg"
-                alt="Barber team"
-                width="370"
-                height="346"
-              />
+              <div class="barber-item-wrap">
+                <img
+                  src="./img/barber-team-1.jpg"
+                  alt="Barber team"
+                  width="370"
+                  height="346"
+                />
+                <p class="barber-item-overlay">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Explicabo delectus provident et ea at fuga ipsa laudantium!
+                  Pariatur saepe voluptate rem iure, magni praesentium adipisci
+                  facilis, corrupti ullam hic commodi!
+                </p>
+              </div>
               <div class="barbers-content">
                 <h3 class="barbers-item-title">John Smith</h3>
                 <p class="barbers-item-text">Extreme Barber</p>
@@ -525,5 +535,17 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>X</button>
+        <h3 class="modal-title">Online-booking</h3>
+        <form class="modal-form form">
+          <input type="text" class="form-input" />
+          <input type="text" class="form-input" />
+          <input type="text" class="form-input" />
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
