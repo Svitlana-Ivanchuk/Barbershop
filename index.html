@@ -460,6 +460,32 @@
         <div class="container contact-container">
           <div class="contact-form">
             <h2 class="contact-title title">Online-booking</h2>
+            <form class="contact-form-inner">
+              <div class="contact-form-group">
+                <input
+                  type="text"
+                  class="contact-form-input form-input"
+                  name="name"
+                  placeholder="Name*"
+                />
+              </div>
+              <div class="contact-form-group">
+                <input
+                  type="tel"
+                  class="contact-form-input form-input"
+                  name="phone"
+                  placeholder="Phone*"
+                />
+              </div>
+              <div class="contact-form-group">
+                <textarea
+                  class="contact-form-textarea form-input"
+                  placeholder="Message"
+                  name="message"
+                ></textarea>
+              </div>
+              <button type="submit" class="contact-form-btn btn">Send</button>
+            </form>
           </div>
 
           <div class="contact-wrap">
@@ -535,7 +561,8 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>X</button>
         <h3 class="modal-title">Online-booking</h3>
@@ -546,13 +573,13 @@
               <div class="form-input-icon">
                 <input
                   type="text"
-                  class="form-input"
+                  class="modal-form-input"
                   placeholder="enter your name*"
                   name="name"
                   required
                 />
                 <svg class="form-icon" width="16px" height="16px">
-                  <use href="./img/symbol-defs.svg#icon-user"></use>
+                  <use href="./img/icon.svg#icon-user"></use>
                 </svg>
               </div>
             </label>
@@ -561,24 +588,34 @@
             <label for="form-email" class="form-label"
               ><span> Enter your email*</span></label
             >
-            <input
-              type="email"
-              id="form-email"
-              class="form-input"
-              placeholder="enter your email*"
-              name="email"
-              required
-            />
+            <div class="form-input-icon">
+              <input
+                type="email"
+                id="form-email"
+                class="modal-form-input"
+                placeholder="enter your email*"
+                name="email"
+                required
+              />
+              <svg class="form-icon" width="16px" height="16px">
+                <use href="./img/icon.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-group">
-            <input
-              type="tel"
-              class="form-input"
-              placeholder="+380 99 999 9999"
-              name="phone"
-              pattern="(?=.*+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$)"
-              required
-            />
+            <div class="form-input-icon">
+              <input
+                type="tel"
+                class="modal-form-input"
+                placeholder="+380 99 999 9999"
+                name="phone"
+                pattern="(?=.*+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$)"
+                required
+              />
+              <svg class="form-icon" width="16px" height="16px">
+                <use href="./img/icon.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-group">
             <textarea
@@ -587,6 +624,20 @@
               placeholder="Massege"
             ></textarea>
           </div>
+          <input
+            type="checkbox"
+            class="form-checkbox visually-hidden"
+            name="policy"
+            id="policy"
+          />
+          <label for="policy" class="form-label checkbox-label">
+            <span>
+              <svg class="form-checkbox-icon" width="10px" height="8px">
+                <use href="./img/icon.svg#icon-mark"></use>
+              </svg>
+            </span>
+            Privacy Policy
+          </label>
           <button type="submit" class="form-btn btn">Send</button>
         </form>
       </div>
