@@ -1,6 +1,6 @@
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
   .section {
     padding: 120px 0;
@@ -148,6 +148,11 @@
     letter-spacing: 0.02em;
     color: #9da4bd;
     width: 360px;
+  }
+  /* ----------about----------- */
+  .about-list {
+    flex-direction: row;
+    width: calc((50% - 30px) / 2);
   }
 
   /* ------------prices------------- */

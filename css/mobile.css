@@ -2,42 +2,6 @@
   .container {
     max-width: 448px;
   }
-  /* ----------about----------- */
-
-  .about {
-    padding: 120px 0;
-  }
-  .about-container {
-    display: flex;
-  }
-
-  .about-content {
-    width: 100%;
-  }
-  .about-subtitle {
-    color: var(--secondary-title-color);
-    margin-bottom: var(--basic-margin);
-  }
-  .about-title {
-    color: var(--secondary-title-color);
-    margin-bottom: var(--basic-margin);
-  }
-  .about-description {
-    font-size: 14px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
-    color: #555555;
-    margin-bottom: 42px;
-  }
-  .about-description span {
-    display: block;
-    font-size: 18px;
-    line-height: 1.67;
-    margin-bottom: var(--basic-margin);
-  }
-  .about-btn {
-    color: #303030;
-  }
 }
 @media screen and (max-width: 767px) {
   .about-list,

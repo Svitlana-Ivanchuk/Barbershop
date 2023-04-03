@@ -5,6 +5,7 @@
   .section {
     padding: 100px 0;
   }
+  /* ----------about----------- */
   .about-list {
     display: flex;
     flex-direction: column;
@@ -12,12 +13,12 @@
     margin-right: 30px;
     width: 50%;
   }
-  .about-item {
+  /* .about-item {
     width: 330px;
     height: 235px;
-  }
+  } */
   .about-content {
+    display: flex;
     width: 50%;
-    max-width: 470px;
   }
 }
