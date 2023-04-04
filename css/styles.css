@@ -112,19 +112,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-}
-.header-logo {
-}
-.mob-menu-btn {
-  display: block;
-  width: 40px;
-  height: 40px;
-}
-.mob-menu-icon {
-  display: block;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+  justify-content: space-between;
 }
 .header-nav-wrap {
   position: fixed;
@@ -134,21 +122,92 @@ body {
   max-width: 330px;
   width: 100%;
   height: 100vh;
+  padding: 48px 30px;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.35s linear;
 }
-.mob-menu-btn-close {
-  display: block;
+.header-nav-wrap.is-open {
+  transform: translateX(0);
+}
+.overlay {
+  background: rgba(25, 28, 38, 0.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  transition: opacity 0.35s linear, visibility 0.35s linear;
+}
+.overlay.is-open {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.header-list {
+  margin-bottom: 64px;
+}
+.header-item {
+  margin-bottom: 24px;
+}
+.header-item:last-child {
+  margin-bottom: 0;
+}
+.header-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  color: #303030;
+  transition: color 0.35s linear;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+.header-link.active {
+  color: var(--accent-color);
+}
+
+.header-tel {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
   margin-left: auto;
+  margin-right: 43px;
+  transition: color 0.35s linear;
+}
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+.header-btn {
+  color: #303030;
+  margin-top: 24px;
+}
+.mob-menu-btn {
+  display: block;
   width: 40px;
   height: 40px;
+  background-color: transparent;
+  border: none;
+}
+.mob-menu-icon {
+  display: block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.btn-close {
+  margin-left: auto;
 }
 .mob-menu-icon-close {
   display: block;
 }
-.header-navigation,
-.header-tel,
-.header-btn {
-  display: none;
-}
+
 /* ----------about----------- */
 .about-content {
   width: 100%;
