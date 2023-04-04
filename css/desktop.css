@@ -151,10 +151,11 @@
   }
   /* ----------about----------- */
   .about-list {
-    flex-direction: row;
-    width: calc((50% - 30px) / 2);
+    flex-wrap: nowrap;
   }
-
+  .about-item {
+    width: calc((100% - 30px) / 2);
+  }
   /* ------------prices------------- */
 
   .prices {
