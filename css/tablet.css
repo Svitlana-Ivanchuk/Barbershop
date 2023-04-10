@@ -13,6 +13,10 @@
   .header-logo {
     margin-right: 59px;
   }
+  .header-logo-icon {
+    display: block;
+    fill: #303030;
+  }
   .header-nav-wrap {
     position: static;
     background-color: transparent;
@@ -23,6 +27,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    transform: none;
   }
   .header-navigation {
     display: flex;
@@ -39,7 +44,7 @@
   .header-link {
     font-size: 12px;
     line-height: 1.33;
-    color: #303030;
+    color: #fff;
     position: relative;
     padding: 24px 0;
     transition: color 0.35s linear;
@@ -56,13 +61,20 @@
   .header-tel {
     font-size: 12px;
     line-height: 1.33;
-    color: #303030;
+    color: #fff;
   }
   .header-btn {
     margin-top: 0;
+    color: #fff;
   }
-  .mob-menu-btn {
+  .mob-menu-btn,
+  .header-menu-wrap {
     display: none;
+  }
+  /* ---------------hero----------- */
+  .hero-list-wrap {
+    display: flex;
+    align-items: flex-end;
   }
   /* ----------about----------- */
   .about-list {

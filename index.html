@@ -29,7 +29,9 @@
     <header class="header">
       <div class="container header-container">
         <a href="./index.html" class="header-logo">
-          <img src="./img/logo.svg" alt="logo" width="69px" height="56px" />
+          <svg class="header-logo-icon" width="69px" height="56px">
+            <use href="./img/icon.svg#icon-Logo"></use>
+          </svg>
         </a>
         <button
           type="button"
@@ -66,16 +68,37 @@
           <a href="tel:+380441111111" class="header-tel link"
             >+38 044 111 11 11</a
           >
+
           <button type="button" class="header-btn btn" data-modal-open>
             Online-booking
           </button>
+          <div class="header-menu-wrap">
+            <div class="header-menu-instagram">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                class="header-menu-link link"
+                >Instagram</a
+              >
+            </div>
+            <div class="header-menu-youtube">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                class="header-menu-link link"
+                >Youtube</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
       <!-- Hero -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <div class="hero-list-wrap">
             <ul class="hero-list list">
@@ -108,7 +131,7 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- /Hero -->
 
       <!-- About -->
