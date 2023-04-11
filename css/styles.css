@@ -32,8 +32,8 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 31px;
+  padding-right: 31px;
 }
 .section {
   padding: 84px 0;
@@ -102,12 +102,12 @@ body {
 }
 /*---------header------ */
 .header {
-  background-color: transparent;
-  padding: 40px 0;
   position: absolute;
-  width: 100%;
   top: 0;
   left: 0;
+  background-color: transparent;
+  width: 100%;
+  padding: 40px 0;
 }
 .header-container {
   display: flex;
@@ -124,6 +124,7 @@ body {
   display: block;
   fill: #fff;
 }
+/* ------ mobile-menu------- */
 .header-nav-wrap {
   position: fixed;
   top: 0;
@@ -260,8 +261,7 @@ body {
   color: var(--accent-color);
 }
 /* ---------------hero----------- */
-.hero {
-}
+
 .hero-container {
   display: flex;
   padding-left: 0;
@@ -284,8 +284,6 @@ body {
   background-position: center;
   background-size: cover;
 }
-.hero-item {
-}
 
 .hero-link {
   font-weight: 600;
@@ -307,18 +305,18 @@ body {
 
 .hero-title {
   font-family: var(--secondaru-font);
-  font-size: 72px;
-  line-height: 1.18;
+  font-size: 48px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
   margin-bottom: var(--basic-margin);
 }
 .hero-description {
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  width: 360px;
+  width: 321px;
 }
 /* ----------about----------- */
 .about-content {

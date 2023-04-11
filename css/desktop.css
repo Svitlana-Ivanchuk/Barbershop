@@ -1,6 +1,8 @@
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .section {
     padding: 120px 0;
@@ -15,11 +17,6 @@
   }
 
   /* ---------------hero----------- */
-
-  .hero {
-  }
-  .hero-container {
-  }
 
   .hero-list {
     display: flex;
@@ -51,8 +48,6 @@
     background-position: center;
     background-size: cover;
   }
-  .hero-item {
-  }
 
   .hero-link {
     font-weight: 600;
@@ -80,13 +75,7 @@
     color: var(--main-title-color);
     margin-bottom: var(--basic-margin);
   }
-  .hero-description {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: #9da4bd;
-    width: 360px;
-  }
+
   /* ----------about----------- */
   .about-list {
     flex-wrap: nowrap;
@@ -618,8 +607,5 @@
   .form-checkbox:checked + .checkbox-label span {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
-  }
-
-  .form-checkbox-icon {
   }
 }
