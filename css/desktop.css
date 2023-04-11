@@ -19,9 +19,6 @@
   .hero {
   }
   .hero-container {
-    display: flex;
-    background-position: center;
-    background-repeat: no repeat;
   }
 
   .hero-list {

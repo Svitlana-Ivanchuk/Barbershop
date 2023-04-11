@@ -29,6 +29,22 @@
     justify-content: space-between;
     transform: none;
   }
+  .hero-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100px;
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: top left;
+  }
+  .hero-list::before {
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+    content: "";
+    flex-shrink: 0;
+  }
   .header-navigation {
     display: flex;
     align-items: center;

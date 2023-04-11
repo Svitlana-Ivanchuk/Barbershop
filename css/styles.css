@@ -103,7 +103,7 @@ body {
 /*---------header------ */
 .header {
   background-color: transparent;
-  padding: 40px 31px;
+  padding: 40px 0;
   position: absolute;
   width: 100%;
   top: 0;
@@ -112,8 +112,8 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
+
 .header-logo {
   display: block;
   background-color: transparent;
@@ -152,6 +152,10 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 .header-list {
   margin-bottom: 64px;
@@ -259,27 +263,11 @@ body {
 }
 .hero-container {
   display: flex;
-  background-position: center;
-  background-repeat: no repeat;
+  padding-left: 0;
+  padding-right: 0;
 }
 .hero-list-wrap {
   display: none;
-}
-.hero-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  width: 100px;
-  transform: rotate(-90deg) translateY(100%);
-  transform-origin: top left;
-}
-.hero-list::before {
-  display: inline-block;
-  width: 60px;
-  height: 1px;
-  background-color: #303030;
-  content: "";
-  flex-shrink: 0;
 }
 
 .hero-content {
