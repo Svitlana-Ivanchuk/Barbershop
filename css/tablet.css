@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     padding-left: 39px;
     padding-right: 39px;
   }
@@ -11,7 +11,9 @@
   .header {
     padding: 32px 0;
   }
-
+  .hero-content {
+    padding: 272px 100px 208px;
+  }
   .header-logo {
     margin-right: 59px;
   }

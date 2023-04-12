@@ -106,13 +106,14 @@ body {
   top: 0;
   left: 0;
   background-color: transparent;
-  width: 100%;
   padding: 40px 0;
+  width: 100%;
 }
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 418px;
 }
 
 .header-logo {
@@ -273,7 +274,7 @@ body {
 
 .hero-content {
   background: grey;
-  padding: 208px 31px 208px;
+  padding: 208px 10px 208px;
   flex-grow: 1;
   background-image: linear-gradient(
       rgba(25, 28, 38, 20%),
@@ -305,7 +306,7 @@ body {
 
 .hero-title {
   font-family: var(--secondaru-font);
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
@@ -316,7 +317,7 @@ body {
   line-height: 1.62;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  width: 321px;
+  max-width: 321px;
 }
 /* ----------about----------- */
 .about-content {
