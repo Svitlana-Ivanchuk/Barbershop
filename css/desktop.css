@@ -74,67 +74,20 @@
   }
   /* ------------prices------------- */
 
-  .prices {
-    padding: 120px 0;
-    background-image: url(../img/bg-prices-min.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #111319;
-  }
-  .prices-subtitle {
-    color: rgba(157, 164, 189, 0.6);
-    margin-bottom: var(--basic-margin);
-  }
-  .prices-title {
-    color: var(--main-title-color);
-    margin-bottom: 44px;
-  }
   .prices-content {
-    display: flex;
+    flex-direction: row;
     gap: 30px;
-    margin-bottom: 44px;
+    padding: 0;
+    background-image: none;
   }
   .prices-list {
     padding: 30px 20px;
-    flex-grow: 1;
     background-image: linear-gradient(
       180deg,
       #090b13 0%,
       rgba(9, 11, 19, 0.2) 100%
     );
     width: calc((100% - 30px) / 2);
-  }
-  .prices-item {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    align-items: baseline;
-  }
-  .prices-item::before {
-    content: "";
-    background-color: rgba(157, 164, 189, 0.12);
-    flex-grow: 1;
-    height: 1px;
-    display: inline-block;
-  }
-  .prices-item:not(:last-child) {
-    margin-bottom: var(--basic-margin);
-  }
-
-  .prices-itme-text {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: #9da4bd;
-  }
-  .prices-itme-text:first-child {
-    order: -1;
-  }
-  .prices-btn {
-    color: #ffffff;
-    display: block;
-    margin: 0 auto;
   }
 
   /* ------------benefits---------------- */

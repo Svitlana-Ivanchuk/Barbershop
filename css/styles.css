@@ -351,3 +351,141 @@ body {
 .about-btn {
   color: #303030;
 }
+/* ------------prices------------- */
+
+.prices {
+  background-image: url(../img/bg-prices-min.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #111319;
+}
+.prices-subtitle {
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--basic-margin);
+}
+.prices-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.18;
+  color: var(--main-title-color);
+  margin-bottom: 44px;
+}
+.prices-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 44px;
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
+  padding: 30px 20px;
+  gap: 20px;
+}
+.prices-list {
+  flex-grow: 1;
+  width: 100%;
+}
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+.prices-item::before {
+  content: "";
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
+  height: 1px;
+  display: inline-block;
+}
+.prices-item:not(:last-child) {
+  margin-bottom: var(--basic-margin);
+}
+
+.prices-itme-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.prices-itme-text:first-child {
+  order: -1;
+}
+.prices-btn {
+  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+}
+/* ------------benefits---------------- */
+
+.benefits-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.benefits-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  background: #f7f7f7;
+}
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
+}
+.benefits-item > span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+  position: relative;
+}
+.benefits-item > span::after {
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-align: center;
+  color: var(--accent-color);
+  position: absolute;
+  top: 7px;
+  right: -10px;
+}
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  text-align: center;
+  color: #303030;
+}
+.benefits-content {
+  max-width: 500px;
+}
+.benefits-subtitle {
+  color: var(--secondary-title-color);
+  margin-bottom: var(--basic-margin);
+}
+.benefits-title {
+  color: var(--secondary-title-color);
+  margin-bottom: var(--basic-margin);
+}
+.benefits-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}

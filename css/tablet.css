@@ -115,6 +115,19 @@
   .about-content {
     width: 50%;
   }
+
+  /* ------------prices------------- */
+  .prices-title {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+  .prices-itme-text {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .prices-content {
+    padding: 32px 40px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
