@@ -5,6 +5,12 @@
   .hero-content {
     padding: 208px 31px 208px;
   }
+  .benefits-item {
+    width: 170px;
+    height: 133px;
+    padding: 20px 24px;
+    background: #f7f7f7;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
