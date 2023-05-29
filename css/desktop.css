@@ -130,18 +130,6 @@
 
   /* ------------gallery---------------- */
 
-  .gallery {
-    padding: 120px 0;
-  }
-  .gallery-subtitle {
-    color: var(--secondary-title-color);
-    margin-bottom: 44px;
-  }
-  .gallery-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
   .gallery-item {
     width: calc((100% - 90px) / 4);
   }
