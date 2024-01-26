@@ -102,7 +102,7 @@
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  width: 360px;
+  max-width: 360px;
  }
  /* ----------about----------- */
  .about-list {

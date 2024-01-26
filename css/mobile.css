@@ -1,28 +1,37 @@
 @media screen and (min-width: 480px) {
-  .hero-title {
-    font-size: 48px;
-  }
-  .hero-content {
-    padding: 208px 31px 208px;
-  }
-  .benefits-item {
-    width: 170px;
-    height: 133px;
-    padding: 20px 24px;
-    background: #f7f7f7;
-  }
+ .hero-container {
+  width: 100%;
+ }
+
+ .hero-title {
+  font-size: 48px;
+ }
+ .hero-content {
+  padding: 208px 31px 208px;
+ }
+
+ .hero-description {
+  max-width: 320px;
+ }
+
+ .benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  background: #f7f7f7;
+ }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
-    max-width: 480px;
-  }
-  .prices-title {
-    font-size: 40px;
-  }
+ .container {
+  max-width: 480px;
+ }
+ .prices-title {
+  font-size: 40px;
+ }
 }
 @media screen and (max-width: 767px) {
-  .about-list,
-  .about-item {
-    display: none;
-  }
+ .about-list,
+ .about-item {
+  display: none;
+ }
 }
