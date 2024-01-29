@@ -40,6 +40,11 @@
  }
 
  .hero-content {
+  background-image: linear-gradient(
+    rgba(25, 28, 38, 20%),
+    rgba(25, 28, 38, 20%)
+   ),
+   url(../img/hero/hero-bg-1.jpg);
  }
 
  .hero-link {

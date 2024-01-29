@@ -97,6 +97,15 @@
   display: flex;
   align-items: flex-end;
  }
+
+ .hero-content {
+  background-image: linear-gradient(
+    rgba(25, 28, 38, 20%),
+    rgba(25, 28, 38, 20%)
+   ),
+   url(../img/hero/hero-bg-tablet-1.jpg);
+ }
+
  .hero-description {
   font-size: 18px;
   line-height: 1.67;

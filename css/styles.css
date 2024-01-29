@@ -279,10 +279,15 @@ body {
  padding: 208px 10px 208px;
  flex-grow: 1;
  background-image: linear-gradient(rgba(25, 28, 38, 20%), rgba(25, 28, 38, 20%)),
-  url(../img/slider-1.jpg);
+  url(../img/hero/hero-bg-mob-1.jpg);
  background-repeat: no-repeat;
  background-position: center;
  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+ (-webkit-min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
 }
 
 .hero-link {
